@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+:root{
+  --bg-color:#ffffff;
+  --bg-secondary-color:#ecf4d3;
+  /* --border-red: '2px solid red'; */
+
+}
+/* ==============================
+   Reusable Card Component
+   ============================== */
+
+.card {
+    background: var(--bg-color);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    height: 15rem;
+    width: 14rem;
+}
+
+
+/* Card Header */
+.card-header {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+/* Card Body */
+.card-body {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* Card Footer */
+.card-footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Card Grid (layout helper) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+
+/* Homeee Page */
+
+
+.homeBg{
+  background-image: url(https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/home-hero-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.service{
+  background: var(--bg-color);
+  color: black;
+  height: 20vh;
+}
+.trendingProducts{
+  background: var(--bg-color);
+  color: black;
+  height: 60vh;
+}
+
+.trendingList{
+  padding: 5rem;
+  display: flex;
+  gap: 2em;
+}
+
+.sale{
+      background-image: url(https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/middle-cta.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+.categories{
+  height: 40vh;
+  background-color: var(--bg-color);
+}
+
+.categoryList{
+  display: flex;
+}
+
+.reviewsOut{
+  background-color: var(--bg-secondary-color);
+  height: 60vh;
+}
+
+.reviewsContainer{
+  display: flex;
+  justify-content: center;
+}
+.reviewsIn{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* Footer */
+
+.footerShop{
+  background-image: url(https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/footer-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+}
+
+.footerShopIn{
+  color:var(--bg-color);
+}
+.footerOut{
+  background-color: var(--bg-secondary-color);
+  height: 20vh;
+}
+
+
+/* navbar */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
+
+/* ==============================
+    Shop
+   ============================== */
+
+   .shop{
+    background-color: var(--bg-color);
+    /* position: absolute; */
+    /* color: black; */
+    /* min-height: 100vh; */
+   }
+
+   .cover{
+    background-image: linear-gradient(to right, rgba(0, 18, 25, 0.6), rgba(0, 18, 25, 0.6)), url(https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/shop-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   }
+
+   .plants{
+    border: var(--border-red);
+   }
+
