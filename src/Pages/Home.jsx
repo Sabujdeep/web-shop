@@ -2,13 +2,19 @@ import React from "react";
 import Card from "../Components/Card";
 import CustomButton from "../Components/CustomButton";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 const Home = () => {
   
   return (
     <>
+      <Navbar />
       <div className="homeBg">
-        <h1>Home</h1>
+        <div className="homeBgTitle flex flex-col justify-center text-center">
+          <p>WELCOME TO URBAN JUNGLE CO.</p>
+          <h1 className="mt-5 mb-5">Discover the Beauty of <br />Nature at Your Fingertips</h1>
+          <CustomButton text={'Shop'} />
+        </div>
       </div>
       <div className="service">
         <h1>service</h1>

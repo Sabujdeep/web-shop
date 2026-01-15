@@ -1,5 +1,6 @@
 import React from "react";
 import CustomButton from "./CustomButton";
+import Navbar from "./Navbar";
 
 const Footer = () => {
   const handleClick = () => {
@@ -9,9 +10,9 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footerShop">
-        <div className="footerShopIn">
-          <h1>Ready to Find your Perfect Plant?</h1>
-          <p>
+        <div className="footerShopIn flex flex-col justify-center items-center">
+          <h1 className="text-center">Ready to Find your Perfect Plant?</h1>
+          <p className="text-center">
             Browse our online store or visit us in person to experience the
             beauty of nature.
           </p>
@@ -19,8 +20,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="footerOut">
+        <Navbar />
         <div className="footerMain">
-          
           <hr />
           <div className="copyright">{/* copyritght */}</div>
         </div>
