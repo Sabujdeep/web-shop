@@ -1,16 +1,17 @@
 import React from 'react'
 
-const CustomButton = ({text, onClick, type}) => {
+const CustomButton = ({text, onClick, type, style }) => {
   
    return (
-    <button
+    <a
       type={type}
       onClick={onClick}
-      // disabled={disabled}
-      className="btn"
+      className={style}
+      
     >
+      
       {text}
-    </button>
+    </a>
   );
 }
 

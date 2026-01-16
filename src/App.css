@@ -68,12 +68,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* position: relative; */
+  
 }
 
 .homeBgTitle > p,
 h1 {
   font-family: "Raleway", "sans-sarif";
   color: #ffffff;
+}
+
+.homeBgTitle > h1{
+  font-weight: 600;
+  font-size: 80px;
 }
 
 .service {
@@ -158,6 +165,22 @@ h1 {
   display: flex;
   justify-content: space-between;
   width: 80vw;
+  /* background-color: black; */
+  align-items: center;
+  height: 4em;
+  margin: 20px 100px 20px 100px;
+  position: absolute;
+  color: var(--bg-color);
+}
+
+.socialIcons{
+  font-size:20px;
+  color: var(--bg-color);
+}
+
+.shopping-bag{
+    font-size:20px;
+
 }
 
 /* ==============================
