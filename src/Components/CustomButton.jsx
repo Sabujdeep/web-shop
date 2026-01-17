@@ -7,7 +7,6 @@ const CustomButton = ({text, onClick, type, style }) => {
       type={type}
       onClick={onClick}
       className={style}
-      
     >
       
       {text}

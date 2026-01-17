@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import ContatcInfo from "../Components/ContatcInfo";
-import { MdFacebook } from "react-icons/md";
 import Footer from "../Components/Footer";
-
+import CustomButton from "../Components/CustomButton";
+import { MdFacebook } from "react-icons/md";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 
 const Contact = () => {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,31 +30,29 @@ const Contact = () => {
   };
   return (
     <>
+      <Navbar />
       <div
-        className="contactHead flex flex-col justify-center"
+        className="contactHead flex flex-col justify-center items-center"
         style={{ color: "white" }}
       >
-        <div className="contact-nav sticky top-0">
-          <Navbar />
-        </div>
-        <div className="contact-title">
-          <p>CONTACT US</p>
-          <h1>Let's Connect</h1>
+        <div className="contact-title leading-[5rem]">
+          <p className="text-center">CONTACT US</p>
+          <h1 className="connect">Let's Connect</h1>
         </div>
       </div>
 
       {/* Conatact main body */}
-      <div className="contactMain border border-red-800 border-lg flex justify-center">
+      <div className="contactMain flex justify-center">
         {/* add some margin from the child conrainer */}
-        <div className="contact-message-form flex m-10 gap-10">
-          <div className="message">
-            <h1 style={{color:"black"}}>Send us Message</h1>
+        <div className="contact-message-form flex p-15 gap-20">
+          <div className="message flex flex-col gap-[5rem]">
+            <h1 className="font-medium" style={{ color: "black" }}>Send us Message</h1>
             <ContatcInfo />
             <ContatcInfo />
             <ContatcInfo />
           </div>
           <div className="contact-form">
-            <form onSubmit={handleSubmit} >
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label>Name *</label>
                 <input
@@ -100,20 +99,19 @@ const Contact = () => {
                 />
               </div>
 
-              <button type="submit">Submit</button>
+              <CustomButton text={"Submit"} type={"submit"} style={"bg-[#88ad35] w-28 rounded-[12px] text-white h-10 flex justify-center items-center hover:bg-[#698927] hover:text-white"}/>
             </form>
           </div>
         </div>
       </div>
-      <div className="follow-socials pt-5 pd-5">
-          <h2>Follow us @Urban Jungle Co.</h2>
-          <div className="follow-icons flex flex-5">
-              <MdFacebook />
-<MdFacebook />
-<MdFacebook />
-<MdFacebook />
-
-          </div>
+      <div className="follow-socials pt-[3rem] flex flex-col justify-center items-center">
+        <p className="text-[2rem]">Follow us @Urban Jungle Co.</p>
+        <div className="follow-icons socialIcons pt-[2rem] flex flex-5 gap-[3rem]">
+          <FaFacebook />
+          <FaInstagram />
+          <FaX />
+          <FaYoutube />
+        </div>
       </div>
       <Footer />
     </>

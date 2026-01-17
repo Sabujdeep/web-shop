@@ -7,37 +7,36 @@ import { GoCheckCircle } from "react-icons/go";
 import MissionCheck from "../Components/MissionCheck";
 import Footer from "../Components/Footer";
 
-
 const About = () => {
   return (
     <>
       <Navbar />
       <div className="aboutHead flex flex-col justify-center">
         <div className="aboutHeadTitle flex flex-col justify-center">
-          <p className="text-center">ABOUT</p>
-          <h1 className="text-center">
+          <p className="text-center text-[1.2rem]">ABOUT</p>
+          <h1 className="text-center mt-5">
             We are Passionate <br /> About Our Work
           </h1>
         </div>
       </div>
-      <div className="about-sec flex p-20 border border-red-200 rounded-lg p-4">
-        <div className="about-sec-image">
-          <img src={aboug} alt="" />
-        </div>
-        <div className="about-sec-ceo">
-          <h1>
+      <div className="about-sec flex p-20">
+        {/* <div className="about-sec-image"> */}
+        <img src={aboug} alt="" />
+        {/* </div> */}
+        <div className="about-sec-ceo ml-15">
+          <h1 className="text-black mb-10">
             We strive to provide our <br /> customers with the highest <br />
             quality
           </h1>
-          <p>
+          <p className="mb-10">
             Urban Jungle Co. was founded in 1960 by a group of plant enthusiasts
             who recognized the positive impact that plants can have on our
             lives. Whether it’s purifying the air, reducing stress, or simply
             adding a touch of beauty to your environment, plants are more than
             just decoration—they’re a lifestyle.
           </p>
-          <hr />
-          <p>
+          <hr className="mb-10" />
+          <p className="italic mb-5">
             “We love what we do & create partnerships with our clients to ensure
             their digital transformation is positioned for long-term success.”
           </p>
@@ -52,11 +51,11 @@ const About = () => {
         </div>
       </div>
       {/* Vakues */}
-      <div className="coreValues flex flex-col justify-center ">
+      <div className="coreValues flex flex-col justify-center items-center gap-[5rem]">
         <h1 className="valueTitle text-center">
           Our Core Values that Drive <br /> Everything We Do
         </h1>
-        <div className="valueIn border border-lg border-red-800 grid grid-cols-3 grid-rows-2">
+        <div className="valueIn w-[80vw] grid grid-cols-3 grid-rows-2 gap-y-6 gap-x-10  max-w-7xl mx-auto">
           <CoreValues />
           <CoreValues />
           <CoreValues />
@@ -66,22 +65,25 @@ const About = () => {
         </div>
       </div>
       {/* Our Mission */}
-      <div className="ourMission border border-lg border-red-800 flex">
-        <div className="ourMissionBody">
-          <h1 style={{color:'black'}}>Our Mission</h1>
+      <div className="ourMission flex items-center p-[5rem] gap-[2rem]">
+        <div className="ourMissionBody flex flex-col gap-[2rem]">
+          <h1 className="font-medium" style={{ color: "black" }}>Our Mission</h1>
           <p>
             Our mission is to make the world a greener place, one plant at a
             time. We strive to provide our customers with the highest quality
             plants and plant care products, along with the knowledge and support
             to help them thrive.
           </p>
-          <div className="our-mission-checks grid grid-cols-2 grid-rows-2">
-            <MissionCheck/><MissionCheck/><MissionCheck/><MissionCheck/>
+          <div className="our-mission-checks grid grid-cols-2 grid-rows-2 grid-y-5">
+            <MissionCheck />
+            <MissionCheck />
+            <MissionCheck />
+            <MissionCheck />
           </div>
         </div>
-        <div className="ourMissionImg">
-          <img src={ourMission} alt="" />
-        </div>
+     
+          <img src={ourMission} alt="img" />
+        
       </div>
       <Footer />
     </>

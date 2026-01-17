@@ -5,24 +5,24 @@ import { MdFacebook } from "react-icons/md";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import { HiShoppingBag } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 
 
 
-const Navbar = () => {
-  const handleClick = () =>{
-    console.log('working')
-  }
+const Navbar = ({textColor}) => {
+  const navigate = useNavigate()
+
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={headerLogo} alt="" />
+        <img src={headerLogo}  alt="" />
       </div>
       <div className="navigation flex gap-9">
         {/* navigation button */}
-        <CustomButton text={"Home"} onClick={handleClick} />
-        <CustomButton text={"Shop"} onClick={handleClick} />
-        <CustomButton text={"About"} onClick={handleClick} />
-        <CustomButton text={"Contact"} onClick={handleClick} />
+        <CustomButton text={"Home"} style={textColor} onClick={()=>navigate("/")} />
+        <CustomButton text={"Shop"} style={textColor} onClick={()=>navigate("/shop")} />
+        <CustomButton text={"About"} style={textColor} onClick={()=>navigate("/about")} />
+        <CustomButton text={"Contact"} style={textColor} onClick={()=>navigate("/contact")} />
         <div className="socialIcons flex gap-4">
           <MdFacebook />
           <FaInstagram />

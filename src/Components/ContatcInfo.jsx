@@ -4,13 +4,13 @@ import { MdPhoneEnabled } from "react-icons/md";
 
 const ContatcInfo = () => {
   return (
-    <div className='flex'>
-      <div className="contact-icon">
-        <MdPhoneEnabled />
+    <div className='flex gap-[1rem] items-center'>
+      <div className="contact-icon bg-[#88ad35] h-[4rem] w-[4rem] rounded-[3rem] flex justify-center items-center bg-[#ebf4d3] text-[2rem]">
+        <MdPhoneEnabled className='text-black text-2xl' />
 
       </div>
     <div className="contact-info">
-        <h2>contct-medium</h2>
+        <p className='font-medium text-[2rem]'>contct-medium</p>
         <p>contact detail</p>
     </div>
     </div>
