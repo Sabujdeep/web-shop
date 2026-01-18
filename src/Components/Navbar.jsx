@@ -9,13 +9,13 @@ import { useNavigate } from "react-router-dom";
 
 
 
-const Navbar = ({textColor}) => {
+const Navbar = ({textColor, navStyle, iconStyle}) => {
   const navigate = useNavigate()
 
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={headerLogo}  alt="" />
+        <img src={headerLogo} className={navStyle}  alt="" />
       </div>
       <div className="navigation flex gap-9">
         {/* navigation button */}
@@ -24,10 +24,10 @@ const Navbar = ({textColor}) => {
         <CustomButton text={"About"} style={textColor} onClick={()=>navigate("/about")} />
         <CustomButton text={"Contact"} style={textColor} onClick={()=>navigate("/contact")} />
         <div className="socialIcons flex gap-4">
-          <MdFacebook />
-          <FaInstagram />
-          <FaYoutube />
-          <FaX />
+          <MdFacebook className={iconStyle} />
+          <FaInstagram className={iconStyle}/>
+          <FaYoutube className={iconStyle}/>
+          <FaX className={iconStyle}/>
 
       </div>
       <HiShoppingBag className="shopping-bag" />

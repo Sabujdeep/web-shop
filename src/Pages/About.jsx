@@ -10,7 +10,7 @@ import Footer from "../Components/Footer";
 const About = () => {
   return (
     <>
-      <Navbar />
+      <Navbar textColor={"text-white no-underline hover:text-green-600"} />
       <div className="aboutHead flex flex-col justify-center">
         <div className="aboutHeadTitle flex flex-col justify-center">
           <p className="text-center text-[1.2rem]">ABOUT</p>

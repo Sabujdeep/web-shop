@@ -57,7 +57,7 @@ const Shop = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar textColor={"text-white no-underline hover:text-green-600"} />
       <div className="shop flex justify-center flex-col">
         <div className="cover  h-96 flex items-center justify-center">
           <p className="font-medium text-[4rem]">Shop</p>

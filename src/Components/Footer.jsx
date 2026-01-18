@@ -1,12 +1,10 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  const handleClick = () => {
-    console.log("working");
-  };
-
+  const navigate = useNavigate()
   return (
     <div className="footer">
       <div className="footerShop">
@@ -19,12 +17,12 @@ const Footer = () => {
           <CustomButton
             text={"Shop Now"}
             style={`bg-[#88ad35] w-28 rounded-[12px] text-white h-10 flex justify-center items-center hover:bg-[#698927] hover:text-white`}
-            onClick={handleClick}
+            onClick={()=>navigate('/shops')}
           />
         </div>
       </div>
       <div className="footerOut">
-        <Navbar textColor={'text-[#88ad35] hover:text-[#698927]'} />
+        <Navbar navStyle={"bg-black"} textColor={'text-black hover:text-green-600'} iconStyle={"text-black"} />
         <div className="footerMain">
           <hr />
           <div className="copyright">{/* copyritght */}</div>

@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <>
-      <Navbar />
+      <Navbar textColor={"text-white no-underline hover:text-green-600"} />
       <div
         className="contactHead flex flex-col justify-center items-center"
         style={{ color: "white" }}

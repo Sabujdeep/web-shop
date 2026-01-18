@@ -324,3 +324,7 @@ h1 {
   height: 30vh;
 }
 
+.HomeBtn{
+  font-weight: 500;
+  /* color: black; */
+}

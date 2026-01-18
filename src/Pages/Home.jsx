@@ -12,10 +12,14 @@ import product3 from "../Utils/product-03.jpg";
 import product5 from "../Utils/product-05.jpg";
 import product4 from "../Utils/product-04.jpg";
 import ClientReviewCard from "../Components/ClientReviewCard";
+import { useNavigate } from "react-router-dom";
 
 // import categoryImg from "../Utils/categoryplant.png";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   const serviceInfo = [
     {
       icon: <FaCreditCard />,
@@ -77,7 +81,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar textColor={"text-white no-underline hover:text-green-600"} />
       <div className="homeBg">
         <div className="homeBgTitle flex flex-col justify-center text-center items-center gap-5">
           <p className="tracking-[0.5rem]">WELCOME TO URBAN JUNGLE CO.</p>
@@ -87,6 +91,7 @@ const Home = () => {
           </h1>
           <CustomButton
             text={"Shop Now"}
+            onClick={()=> navigate('/shop')} 
             style={`bg-[#88ad35] w-28 rounded-[12px] text-white h-10 flex justify-center items-center hover:bg-[#698927] hover:text-white`}
           />
         </div>
@@ -125,6 +130,7 @@ const Home = () => {
           </p>
           <CustomButton
             text={"Shop Now"}
+            onClick={()=> navigate('/shop')}
             style={`bg-[#88ad35] w-28 rounded-[12px] text-white h-10 flex justify-center items-center hover:bg-[#698927] hover:text-white`}
           />
         </div>
