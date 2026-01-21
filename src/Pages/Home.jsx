@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 
 // import categoryImg from "../Utils/categoryplant.png";
 
+
 const Home = () => {
 
   const navigate = useNavigate();
