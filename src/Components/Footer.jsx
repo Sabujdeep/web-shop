@@ -17,7 +17,7 @@ const Footer = () => {
           <CustomButton
             text={"Shop Now"}
             style={`bg-[#88ad35] w-28 rounded-[12px] text-white h-10 flex justify-center items-center hover:bg-[#698927] hover:text-white`}
-            onClick={()=>navigate('/shops')}
+            onClick={()=>navigate('/shop')}
           />
         </div>
       </div>

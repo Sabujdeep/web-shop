@@ -328,3 +328,17 @@ h1 {
   font-weight: 500;
   /* color: black; */
 }
+
+/* preview */
+
+.previewMain{
+  min-height: 100vh;
+}
+
+.cart-main{
+  background-image: url("../public/images/undraw_empty-cart.svg");
+  background-size: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
