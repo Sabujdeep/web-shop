@@ -17,7 +17,7 @@ const Cart = () => {
     return (
       <>
         <Navbar navStyle={"bg-black"} textColor={"text-black no-underline hover:text-green-600" }/>
-        <p className="text-center mt-40 h-[60vh]">
+        <p className="text-center p-10 pt-28 h-[60vh]">
           Your cart is empty 🛒
         </p>
         <Footer />
