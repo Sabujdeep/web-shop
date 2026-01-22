@@ -56,7 +56,7 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <div className="flex border">
+                <div className="flex border gap-4">
                   <button
                     onClick={() =>
                       item.quantity > 1 &&
