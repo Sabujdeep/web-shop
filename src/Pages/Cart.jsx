@@ -16,7 +16,7 @@ const Cart = () => {
   if (cart.length === 0) {
     return (
       <>
-        <Navbar textColor="text-black no-underline hover:text-green-600" />
+        <Navbar navStyle={"bg-black"} textColor={"text-black no-underline hover:text-green-600" }/>
         <p className="text-center mt-40 h-[60vh]">
           Your cart is empty 🛒
         </p>
@@ -27,9 +27,9 @@ const Cart = () => {
 
   return (
     <>
-      <Navbar textColor="text-black no-underline hover:text-green-600" />
-      <div className="p-10 pt-20">
-        <h1 className="text-3xl font-bold mb-8">Shopping Cart</h1>
+      <Navbar navStyle={"bg-black"} textColor={"text-black no-underline hover:text-green-600"} />
+      <div className="p-10 pt-28">
+        <h1 className=" text-black text-3xl font-bold mb-8">Shopping Cart</h1>
 
         <div className="flex flex-col gap-6">
           {cart.map(item => {
